@@ -3,6 +3,7 @@
 A full-stack Notes application built using the **MERN stack** (MongoDB, Express.js, React, Node.js) that allows users to create, manage, and organize notes efficiently.
 
 🌐 **Live Demo:** https://mern-notes-7wjw.onrender.com/
+⚠️ *Note: The site may take up to a minute to load initially due to Render's free tier sleeping behavior.*
 📦 **Repository:** https://github.com/jasxhn/MERN-Notes
 
 ---
@@ -136,7 +137,27 @@ The app is deployed on **Render**:
 
 ## 📸 Screenshots
 
-*Add your screenshots here (UI, notes page, etc.)*
+### 🏠 Home Page
+
+![Home Page](assets/screenshots/HomePage.png)
+
+---
+
+### 📝 Create Note Page
+
+![Create Note](assets/screenshots/CreateNotePage.png)
+
+---
+
+### ✅ Note Created
+
+![Note Created](assets/screenshots/NoteCreated.png)
+
+---
+
+### 🗑️ Delete Note
+
+![Delete Note](assets/screenshots/DeleteNote.png)
 
 ---
 
