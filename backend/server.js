@@ -5,16 +5,19 @@ import dotenv from "dotenv";
 import rateLimiter from "./src/middleware/rateLimiter.js";
 import who from "./src/middleware/who.js";
 import cors from "cors";
+import path from "path"
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5001
+const __dirname = path.resolve()
 
-app.use(cors({
+if(process.env.NODE_ENV !== "production") {
+  app.use(cors({
   origin: "http://localhost:5173",
 }));
-
+}
 
 //middleware
 app.use(express.json()); //first - very important middleware for req.body
@@ -24,6 +27,14 @@ app.use(who)
 
 
 app.use("/api/notes", notesRoutes); //comes second
+
+if(process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/dist")))
+
+  app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client", "dist", "index.html"))
+})
+}
 
 connectDB()
   .then(() => {
