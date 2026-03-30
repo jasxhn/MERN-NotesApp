@@ -135,6 +135,7 @@ The app is deployed on **Render**:
 ## 📸 Screenshots
 
 * 🏠 Home Page
+* ![Home Page](./assets/HomePage.png)
 * 📝 Create Note Page
 * ✅ Note Created
 * 🗑️ Delete Note
