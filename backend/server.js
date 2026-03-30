@@ -35,7 +35,7 @@ app.use("/api/notes", notesRoutes);
 app.use("/api/auth", authRoutes);
 
 if (process.env.NODE_ENV === "production") {
-  const clientDistPath = path.resolve(__dirname, "../frontend/dist");
+  const clientDistPath = path.resolve(__dirname, "../client/dist");
 
   app.use(express.static(clientDistPath));
 
@@ -47,9 +47,9 @@ if (process.env.NODE_ENV === "production") {
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`🚀 Server running on port ${PORT}`);
+      console.log(`Server running on port ${PORT}`);
     });
   })
   .catch((err) => {
-    console.error("❌ Database connection failed:", err);
+    console.error("Database connection failed:", err);
   });
