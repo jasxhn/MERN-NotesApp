@@ -134,11 +134,21 @@ The app is deployed on **Render**:
 
 ## 📸 Screenshots
 
-* 🏠 Home Page
-* ![Home Page](./assets/HomePage.png)
-* 📝 Create Note Page
-* ✅ Note Created
-* 🗑️ Delete Note
+### 🏠 Home Page
+
+![Home Page](./assets/screenshots/HomePage.png)
+
+### 📝 Create Note Page
+
+![Create Note Page](./assets/screenshots/CreateNotePage.png)
+
+### ✅ Note Created
+
+![Note Created](./assets/screenshots/NoteCreated.png)
+
+### 🗑️ Delete Note
+
+![Delete Note](./assets/screenshots/DeleteNote.png)
 
 ---
 
